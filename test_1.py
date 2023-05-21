@@ -67,7 +67,7 @@ class Test_1():
 
         postal_code = driver.find_element(by=By.XPATH, value="//input[@id='postal-code']")
         postal_code.send_keys("123456")
-
+        print("Postal code is entered")
 
 test = Test_1()
 test.test_select_product()
