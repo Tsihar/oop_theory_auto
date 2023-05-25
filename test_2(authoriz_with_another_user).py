@@ -6,7 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from Login_page import Login_page
-# урок 5.3 логинимся под проблемным юзером problem_user
+# урок 5.3 логинимся под проблемным юзером problem_user - тест: логин проблемныйм юзером
 # в итоге чтоб создать второй тест надо было всего-то скопипастить тест, поменять назв класса, логин, и экз класса
 class Test_2():
     def test_select_product(self): # метод с помощью которого, мы выбираем опред товар на странице товаров
