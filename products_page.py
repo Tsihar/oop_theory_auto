@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+"""Class 'Products_page' contains 'login_verification' and 'logout' methods"""
 class Products_page():
     def __init__(self, driver):
         self.driver = driver

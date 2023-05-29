@@ -21,8 +21,10 @@ driver.maximize_window()
 login = ['standard_user', 'locked_out_user', 'problem_user', 'performance_glitch_user']
 password = 'secret_sauce'
 
+"""Create class instance 'page_products'."""
 page_products = Products_page(driver)
 
+"""Login"""
 for user_name in login:
     try:
         user_name_login = WebDriverWait(driver, 6).until(EC.element_to_be_clickable((By.XPATH, "//input[@id='user-name']")))
@@ -38,6 +40,7 @@ for user_name in login:
         page_products.login_verification()
         print("standard_user has opened 'Products' page")
 
+        """Logout using class page_products"""
         page_products.logout()
         print("standard_user has logged out")
 
